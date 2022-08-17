@@ -1,4 +1,6 @@
 {
+  "less.validate": false,
+  "stylelint.validate": ["css", "less"],
   "eslint.validate": [
     "javascript", 
     "javascriptreact",
@@ -6,6 +8,8 @@
     "typescriptreact",
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
   },
 }
