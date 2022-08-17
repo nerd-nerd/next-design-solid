@@ -7,11 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "style-lint": "stylelint --fix"
   },
   "lint-staged": {
     "./packages/**/*.{tsx,ts}": [
       "pnpm run lint"
+    ],
+    "./packages/**/*.less": [
+      "pnpm run style-lint"
     ]
   },
   "license": "MIT",
